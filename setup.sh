@@ -16,4 +16,5 @@ GIT_SSH_COMMAND="ssh -i ${SSH_KEY}" git clone git@github.com:henman95/ansible.wo
 GIT_SSH_COMMAND="ssh -i ${SSH_KEY}" git clone git@github.com:henman95/dotfiles.git dotfiles/core 
 GIT_SSH_COMMAND="ssh -i ${SSH_KEY}" git clone git@github.com:henman95/dotfiles.private.git dotfiles/private
 
+mkdir -p ${HOME}/bin
 stow -t ${HOME} -d setup_files $(ls setup_files)
